@@ -27,11 +27,38 @@ nav a{position:relative}nav a:focus-visible,.btn:focus-visible,.outline:focus-vi
 .hero.hero-wide{position:relative;width:100%;height:clamp(460px,68vw,780px);overflow:hidden;background:#e7d9bf;padding:0}
 .hero-wide-image{display:block;width:100%;height:100%;object-fit:cover;object-position:center 43%}
 @media(max-width:800px){.hero.hero-wide{height:clamp(430px,115vw,660px)}.hero-wide-image{object-position:center 40%}}
+
+/* Refined editorial rhythm and quieter cards */
+:root{--cream:#faf8f3;--ink:#302d29;--line:#e8e1d5;--muted:#746e65}
+body{background:var(--cream)}
+.head{min-height:100px}.top{background:#faf8f3}
+.hero.hero-wide{height:clamp(480px,56vw,740px)}
+.retreat{background:#f3eee5;border-color:#e8e0d2}
+.retreat .wrap{padding-top:38px;padding-bottom:38px}
+.retreat h2{font-size:clamp(30px,3vw,42px)}
+.section{padding-top:96px;padding-bottom:96px}
+.section h2{font-size:clamp(38px,4.2vw,57px);letter-spacing:-1.2px;margin-bottom:26px}
+.section h2 em{font-weight:400;font-style:italic;color:#a08a6a}
+.section-intro{max-width:660px;font-size:18px;line-height:1.85;margin-bottom:38px}
+.grid{gap:24px}
+.tile{background:transparent;border:1px solid #ded3c3;border-radius:2px;min-height:330px;padding:42px 45px;position:relative}
+.tile:first-child{background:#f0e9de}.tile:last-child{background:#f7f3ec}
+.tile .number{font-size:12px}.tile h3{font-size:clamp(34px,3.6vw,48px);margin:30px 0 18px}
+.tile p{font-size:18px;line-height:1.8;max-width:390px}
+.tile>span:last-child{font:12px Arial,sans-serif;letter-spacing:.3px;color:#8a7d6b}
+.tile:hover{box-shadow:none;transform:translateY(-2px)}
+.smallgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 35px}
+.smallgrid a{min-height:135px;background:transparent;border-top:1px solid #d7c8b2;padding:25px 2px 28px;transition:padding .2s}
+.smallgrid a:hover{background:transparent;padding-left:12px}
+.smallgrid strong{font-size:clamp(23px,2.3vw,30px);margin-bottom:8px}
+.smallgrid span{font-size:13px;line-height:1.6}
+footer{background:#f3eee5;padding:38px 0}
+@media(max-width:800px){.hero.hero-wide{height:clamp(430px,115vw,660px)}.section{padding-top:65px;padding-bottom:65px}.tile{padding:32px;min-height:285px}.smallgrid{grid-template-columns:1fr;gap:0}.smallgrid a{min-height:110px}.section h2{letter-spacing:-.6px}}
 </style></head>
 <body><header class="top"><div class="wrap head"><a class="brand" href="/"><span class="symbol">✧</span><span><strong>Pháp học & Pháp hành</strong><small>SƯ PHƯỚC NHỰT · VENERABLE DR. PAÑÑĀDĪPA</small></span></a><nav aria-label="Chuyên mục"><a href="#phap-hoc">Pháp học</a><a href="#phap-hanh">Pháp hành</a><a href="#phap-thoai">Pháp thoại</a><a href="#hoi-dap">Hỏi đáp</a><a href="#tin-tuc">Tin tức &amp; Khóa thiền</a><a href="#tho">Thơ</a><a href="/gioi-thieu/">Giới thiệu</a></nav></div></header>
 <main><section class="hero hero-wide" aria-label="Ảnh Sư Phước Nhựt"><img class="hero-wide-image" src="IMG_3219.JPG" alt="Sư Phước Nhựt ngồi thiền trong y màu đỏ trầm" loading="eager"></section>
 <section class="retreat" id="khoa-thien"><div class="wrap"><div><div class="eyebrow">THÔNG BÁO & ĐĂNG KÝ</div><h2>Khóa thiền</h2><p>Lịch khóa thiền và thông tin đăng ký sẽ được cập nhật tại đây.</p></div><span class="outline">Chưa có thông báo mới</span></div></section>
-<section class="wrap section"><div class="eyebrow">HỌC HỎI VÀ THỰC HÀNH</div><h2>Hai lĩnh vực chính</h2><p class="section-intro">Một không gian dành cho việc tìm hiểu giáo pháp và nuôi dưỡng sự thực hành, được sắp xếp rõ ràng để thuận tiện tra cứu.</p><div class="grid"><article class="tile" id="phap-hoc"><div class="number">01 / PARIYATTI</div><h3>Pháp học</h3><p>Các bài giảng về kinh điển, giáo lý, câu chuyện và điển tích Phật giáo.</p><span>Đang chuẩn bị nội dung ↗</span></article><article class="tile" id="phap-hanh"><div class="number">02 / PAṬIPATTI</div><h3>Pháp hành</h3><p>Các bài giảng và hướng dẫn về thực hành trên con đường tu tập.</p><span>Đang chuẩn bị nội dung ↗</span></article></div></section>
-<section class="wrap section" style="padding-top:0"><div class="eyebrow">THƯ VIỆN</div><h2>Khám phá thêm</h2><div class="smallgrid"><a id="phap-thoai" href="#phap-thoai"><strong>Video & Audio</strong><span>Bài giảng của Sư · Sắp cập nhật</span></a><a id="hoi-dap" href="#hoi-dap"><strong>Hỏi đáp</strong><span>Câu hỏi của hành giả · Sắp cập nhật</span></a><a id="tin-tuc" href="#tin-tuc"><strong>Tin tức &amp; Khóa thiền</strong><span>Phật sự, lễ nghi, lịch khóa thiền và đăng ký</span></a><a id="tho" href="#tho"><strong>Tuyển tập thơ</strong><span>Thơ của Sư · Sắp cập nhật</span></a><a id="gioi-thieu" href="/gioi-thieu/"><strong>Tiểu sử</strong><span>Giới thiệu về Sư · Sắp cập nhật</span></a><a href="#khoa-thien"><strong>Khóa thiền</strong><span>Thông báo và đăng ký</span></a></div></section>
-<section class="wrap section" style="padding-top:0"><div class="note">Đây là phiên bản thử nghiệm về giao diện và cấu trúc. Các bài giảng, thông tin tiểu sử, thơ và lịch khóa thiền sẽ chỉ được đăng sau khi có tài liệu xác thực và được duyệt.</div></section></main>
+<section class="wrap section"><div class="eyebrow">NỀN TẢNG TU HỌC</div><h2>Pháp học <em>&</em> Pháp hành</h2><p class="section-intro">Một không gian dành cho việc tìm hiểu giáo pháp và nuôi dưỡng sự thực hành, được sắp xếp rõ ràng để thuận tiện tra cứu.</p><div class="grid"><article class="tile" id="phap-hoc"><div class="number">01 / PARIYATTI</div><h3>Pháp học</h3><p>Các bài giảng về kinh điển, giáo lý, câu chuyện và điển tích Phật giáo.</p><span>Đang chuẩn bị nội dung ↗</span></article><article class="tile" id="phap-hanh"><div class="number">02 / PAṬIPATTI</div><h3>Pháp hành</h3><p>Các bài giảng và hướng dẫn về thực hành trên con đường tu tập.</p><span>Đang chuẩn bị nội dung ↗</span></article></div></section>
+<section class="wrap section" style="padding-top:0"><div class="eyebrow">TƯ LIỆU & CHIA SẺ</div><h2>Thư viện</h2><div class="smallgrid"><a id="phap-thoai" href="#phap-thoai"><strong>Pháp thoại</strong><span>Bài giảng của Sư · Sắp cập nhật</span></a><a id="hoi-dap" href="#hoi-dap"><strong>Hỏi đáp</strong><span>Câu hỏi của hành giả · Sắp cập nhật</span></a><a id="tin-tuc" href="#tin-tuc"><strong>Tin tức &amp; Khóa thiền</strong><span>Phật sự, lễ nghi, lịch khóa thiền và đăng ký</span></a><a id="tho" href="#tho"><strong>Tuyển tập thơ</strong><span>Thơ của Sư · Sắp cập nhật</span></a><a id="gioi-thieu" href="/gioi-thieu/"><strong>Giới thiệu về Sư</strong><span>Tiểu sử và quá trình tu học</span></a></div></section>
+</main>
 <footer><div class="wrap">Sư Phước Nhựt · Venerable Dr. Paññādīpa — Không gian chia sẻ Pháp học và Pháp hành</div></footer></body></html>
