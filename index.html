@@ -24,15 +24,15 @@ nav a{position:relative}nav a:focus-visible,.btn:focus-visible,.outline:focus-vi
 @media(max-width:800px){.hero-layout{grid-template-columns:1fr;gap:0;padding-top:70px;padding-bottom:55px}.hero-art{min-height:345px}.art-arch{height:320px;width:270px}.bodhi{font-size:70px}.art-note{right:5px;bottom:0}.hero h1{font-size:clamp(43px,9vw,62px)}.hero{padding:0}.head{min-height:0}}
 .hero-layout{grid-template-columns:1fr;min-height:570px;justify-items:center}.hero-art{width:100%;min-height:570px}.art-arch{width:min(100%,410px);height:515px}@media(max-width:800px){.hero-layout{padding-top:40px;padding-bottom:40px;min-height:0}.hero-art{min-height:360px}.art-arch{width:270px;height:340px}}
 /* Full-width photographic opening: no arch, frame, or overlaid copy */
-.hero.hero-wide{position:relative;width:100%;height:clamp(460px,68vw,780px);overflow:hidden;background:#e7d9bf;padding:0}
-.hero-wide-image{display:block;width:100%;height:100%;object-fit:cover;object-position:center 43%}
-@media(max-width:800px){.hero.hero-wide{height:clamp(430px,115vw,660px)}.hero-wide-image{object-position:center 40%}}
+.hero.hero-wide{position:relative;width:100%;height:auto;overflow:hidden;background:#e7d9bf;padding:0}
+.hero-wide-image{display:block;width:100%;height:auto;object-fit:contain;object-position:center center}
+@media(max-width:800px){.hero.hero-wide{height:auto}.hero-wide-image{object-position:center center}}
 
 /* Refined editorial rhythm and quieter cards */
 :root{--cream:#faf8f3;--ink:#302d29;--line:#e8e1d5;--muted:#746e65}
 body{background:var(--cream)}
 .head{min-height:100px}.top{background:#faf8f3}
-.hero.hero-wide{height:clamp(480px,56vw,740px)}
+.hero.hero-wide{height:auto}
 .retreat{background:#f3eee5;border-color:#e8e0d2}
 .retreat .wrap{padding-top:38px;padding-bottom:38px}
 .retreat h2{font-size:clamp(30px,3vw,42px)}
@@ -53,7 +53,7 @@ body{background:var(--cream)}
 .smallgrid strong{font-size:clamp(23px,2.3vw,30px);margin-bottom:8px}
 .smallgrid span{font-size:13px;line-height:1.6}
 footer{background:#f3eee5;padding:38px 0}
-@media(max-width:800px){.hero.hero-wide{height:clamp(430px,115vw,660px)}.section{padding-top:65px;padding-bottom:65px}.tile{padding:32px;min-height:285px}.smallgrid{grid-template-columns:1fr;gap:0}.smallgrid a{min-height:110px}.section h2{letter-spacing:-.6px}}
+@media(max-width:800px){.hero.hero-wide{height:auto}.section{padding-top:65px;padding-bottom:65px}.tile{padding:32px;min-height:285px}.smallgrid{grid-template-columns:1fr;gap:0}.smallgrid a{min-height:110px}.section h2{letter-spacing:-.6px}}
 </style></head>
 <body><header class="top"><div class="wrap head"><a class="brand" href="/"><span class="symbol">✧</span><span><strong>Pháp học & Pháp hành</strong><small>SƯ PHƯỚC NHỰT · VENERABLE DR. PAÑÑĀDĪPA</small></span></a><nav aria-label="Chuyên mục"><a href="#phap-hoc">Pháp học</a><a href="#phap-hanh">Pháp hành</a><a href="#phap-thoai">Pháp thoại</a><a href="#hoi-dap">Hỏi đáp</a><a href="#tin-tuc">Tin tức &amp; Khóa thiền</a><a href="#tho">Thơ</a><a href="/gioi-thieu/">Giới thiệu</a></nav></div></header>
 <main><section class="hero hero-wide" aria-label="Ảnh Sư Phước Nhựt"><img class="hero-wide-image" src="/IMG_3219.jpg?v=20261103b" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/suphuocnhut/suphuocnhut.github.io/main/IMG_3219.jpg?v=20261103b'" alt="Sư Phước Nhựt ngồi thiền trong y màu đỏ trầm" loading="eager"></section>
