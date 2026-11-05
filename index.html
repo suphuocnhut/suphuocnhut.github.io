@@ -63,11 +63,45 @@ footer{background:#f3eee5;padding:38px 0}
 
 /* Vietnamese-capable serif font: avoid Georgia glyph fallback splitting accents */
 body{font-family:"Literata","Times New Roman",serif}
+
+/* Serene editorial index, inspired by staggered illustrated magazine layouts */
+.editorial-intro{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start;padding-top:105px;padding-bottom:76px}
+.editorial-intro h1{font-size:clamp(50px,5.4vw,82px);font-weight:400;line-height:1.12;letter-spacing:-2px;margin:20px 0 0}
+.editorial-intro h1 em{font-weight:400;color:#a38b67}
+.intro-copy{max-width:490px;padding-top:26px}
+.intro-copy p{font-size:21px;line-height:1.8;color:#615d55;margin:0}
+.intro-copy .intro-sub{font:13px/1.6 Arial,sans-serif;letter-spacing:.4px;color:#9a8d7c;margin-top:25px}
+.editorial-gallery{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));column-gap:24px;align-items:start;padding-bottom:110px}
+.editorial-item{display:block;min-width:0;scroll-margin-top:25px}
+.editorial-item:nth-child(even){padding-top:88px}
+.editorial-art{width:100%;aspect-ratio:2/3;position:relative;overflow:hidden;isolation:isolate;transition:transform .35s ease}
+.editorial-item:hover .editorial-art{transform:translateY(-5px)}
+.editorial-item h2{font:600 clamp(15px,1.25vw,19px)/1.35 Arial,sans-serif;letter-spacing:-.35px;margin:16px 0 6px;color:#302d29}
+.editorial-item p{font:13px/1.55 Arial,sans-serif;color:#857d70;margin:0}
+.editorial-art span{position:absolute;display:block}
+.art-study{background:linear-gradient(145deg,#344e52,#182d38)}.art-orbit{width:120%;height:80%;border:1px solid #d4c3a466;border-radius:50%;top:-28%;left:-42%;transform:rotate(-35deg)}.art-book{width:52%;height:40%;background:linear-gradient(135deg,#f6e9c5,#c6a878);top:34%;left:24%;clip-path:polygon(0 0,50% 16%,100% 0,100% 90%,50% 100%,0 90%);box-shadow:0 10px 25px #0003}
+.art-practice{background:#d7d9c8}.art-sun{width:64%;aspect-ratio:1;border-radius:50%;background:#e8e4ce;top:16%;left:18%}.art-path{width:100%;height:72%;bottom:-6%;background:#809d87;clip-path:polygon(0 100%,0 50%,35% 36%,57% 62%,100% 4%,100% 100%)}
+.art-talk{background:#829b8d}.art-halo{width:130%;aspect-ratio:1;border:18px solid #d7d5b188;border-radius:50%;left:-15%;top:9%;box-shadow:0 0 0 18px #486d6366,0 0 0 40px #d7d5b133}.art-wave{width:28%;height:58%;background:#e7d5ad;bottom:-4%;left:36%;border-radius:50% 50% 0 0}
+.art-questions{background:#c99683}.art-door{width:53%;height:75%;background:#f0dfc8;border-radius:55% 55% 0 0;left:24%;bottom:-3%}.art-light{width:23%;height:57%;background:#93a8a4;border-radius:55% 55% 0 0;left:53%;bottom:-3%}
+.art-retreat{background:#e6ae34}.art-stone{background:#87958b;left:20%;width:62%;height:20%;border-radius:47% 53% 43% 57%;transform:rotate(-9deg)}.art-stone.s1{bottom:18%;width:75%;left:12%}.art-stone.s2{bottom:37%;width:54%;left:23%;transform:rotate(12deg)}.art-stone.s3{bottom:55%;width:32%;left:36%;transform:rotate(-15deg)}
+.art-about{background:#7c9a9b}.art-leaf{background:#e5dfc9;width:64%;height:15%;border-radius:100% 0 100% 0;left:8%;bottom:20%;transform:rotate(-32deg)}.art-leaf.l2{left:37%;bottom:38%;transform:rotate(38deg);width:55%}.art-leaf.l3{left:6%;bottom:57%;transform:rotate(-35deg);width:48%}
+.editorial-bottom{border-top:1px solid #ded6c9;display:grid;grid-template-columns:1fr 1fr;gap:65px;padding-top:55px;padding-bottom:100px}
+.editorial-bottom h2{font-size:clamp(30px,3vw,44px);font-weight:400;margin:14px 0 10px}.editorial-bottom p{color:#766f65;max-width:430px;line-height:1.7}
+.quiet-status,.quiet-arrow{display:inline-block;font:12px Arial,sans-serif;color:#978368;margin-top:14px}
+@media(max-width:1050px){.editorial-gallery{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:55px}.editorial-item:nth-child(even){padding-top:55px}.editorial-item h2{font-size:18px}}
+@media(max-width:650px){.editorial-intro{grid-template-columns:1fr;gap:10px;padding-top:65px;padding-bottom:55px}.editorial-intro h1{font-size:clamp(48px,10vw,65px)}.intro-copy{padding-top:10px}.intro-copy p{font-size:18px}.editorial-gallery{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:17px;row-gap:35px;padding-bottom:65px}.editorial-item:nth-child(even){padding-top:48px}.editorial-item h2{font-size:16px}.editorial-item p{font-size:12px}.editorial-bottom{grid-template-columns:1fr;gap:40px;padding-bottom:65px}}
 </style></head>
 <body><header class="top"><div class="wrap head"><a class="brand" href="/"><span class="symbol">✧</span><span><strong>Pháp học & Pháp hành</strong><small>SƯ PHƯỚC NHỰT · VENERABLE DR. PAÑÑĀDĪPA</small></span></a><nav aria-label="Chuyên mục"><a href="#phap-hoc">Pháp học</a><a href="#phap-hanh">Pháp hành</a><a href="#phap-thoai">Pháp thoại</a><a href="#hoi-dap">Hỏi đáp</a><a href="#tin-tuc">Tin tức &amp; Khóa thiền</a><a href="#tho">Thơ</a><a href="/gioi-thieu/">Giới thiệu</a></nav></div></header>
 <main><section class="hero hero-wide" aria-label="Ảnh Sư Phước Nhựt"><img class="hero-wide-image" src="/IMG_3219.jpg?v=20261103b" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/suphuocnhut/suphuocnhut.github.io/main/IMG_3219.jpg?v=20261103b'" alt="Sư Phước Nhựt ngồi thiền trong y màu đỏ trầm" loading="eager"></section>
-<section class="retreat" id="khoa-thien"><div class="wrap"><div><div class="eyebrow">THÔNG BÁO & ĐĂNG KÝ</div><h2 class="keep-words">Khóa thiền</h2><p>Lịch khóa thiền và thông tin đăng ký sẽ được cập nhật tại đây.</p></div><span class="outline">Chưa có thông báo mới</span></div></section>
-<section class="wrap section"><div class="eyebrow">NỀN TẢNG TU HỌC</div><h2>Pháp học <em>&</em> Pháp hành</h2><p class="section-intro">Một không gian dành cho việc tìm hiểu giáo pháp và nuôi dưỡng sự thực hành, được sắp xếp rõ ràng để thuận tiện tra cứu.</p><div class="grid"><article class="tile" id="phap-hoc"><div class="number">01 / PARIYATTI</div><h3>Pháp học</h3><p>Các bài giảng về kinh điển, giáo lý, câu chuyện và điển tích Phật giáo.</p><span>Đang chuẩn bị nội dung ↗</span></article><article class="tile" id="phap-hanh"><div class="number">02 / PAṬIPATTI</div><h3>Pháp hành</h3><p>Các bài giảng và hướng dẫn về thực hành trên con đường tu tập.</p><span>Đang chuẩn bị nội dung ↗</span></article></div></section>
-<section class="wrap section" style="padding-top:0"><div class="eyebrow">TƯ LIỆU & CHIA SẺ</div><h2>Thư viện</h2><div class="smallgrid"><a id="phap-thoai" href="#phap-thoai"><strong>Pháp thoại</strong><span>Bài giảng của Sư · Sắp cập nhật</span></a><a id="hoi-dap" href="#hoi-dap"><strong>Hỏi đáp</strong><span>Câu hỏi của hành giả · Sắp cập nhật</span></a><a id="tin-tuc" href="#tin-tuc"><strong class="keep-words">Tin tức &amp; Khóa thiền</strong><span>Phật sự, lễ nghi, lịch khóa thiền và đăng ký</span></a><a id="tho" href="#tho"><strong>Tuyển tập thơ</strong><span>Thơ của Sư · Sắp cập nhật</span></a><a id="gioi-thieu" href="/gioi-thieu/"><strong class="keep-words">Giới thiệu về Sư</strong><span>Tiểu sử và quá trình tu học</span></a></div></section>
+<section class="editorial-intro wrap" aria-labelledby="explore-title"><div><div class="eyebrow">KHÔNG GIAN TU HỌC</div><h1 id="explore-title">Pháp học <em>&</em><br>Pháp hành</h1></div><div class="intro-copy"><p>Một không gian dành cho việc tìm hiểu giáo pháp, lắng nghe những bài giảng và nuôi dưỡng sự thực hành trên con đường tu tập.</p><p class="intro-sub">Khám phá các chuyên mục bên dưới.</p></div></section>
+<section class="editorial-gallery wrap" aria-label="Các chuyên mục">
+<a class="editorial-item" id="phap-hoc" href="#phap-hoc"><div class="editorial-art art-study" aria-hidden="true"><span class="art-orbit"></span><span class="art-book"></span></div><h2>Pháp học</h2><p>Kinh điển, giáo lý và điển tích Phật giáo</p></a>
+<a class="editorial-item" id="phap-hanh" href="#phap-hanh"><div class="editorial-art art-practice" aria-hidden="true"><span class="art-sun"></span><span class="art-path"></span></div><h2>Pháp hành</h2><p>Những hướng dẫn thực hành tu tập</p></a>
+<a class="editorial-item" id="phap-thoai" href="#phap-thoai"><div class="editorial-art art-talk" aria-hidden="true"><span class="art-halo"></span><span class="art-wave"></span></div><h2>Pháp thoại</h2><p>Các bài giảng của Sư</p></a>
+<a class="editorial-item" id="hoi-dap" href="#hoi-dap"><div class="editorial-art art-questions" aria-hidden="true"><span class="art-door"></span><span class="art-light"></span></div><h2>Hỏi đáp</h2><p>Giải đáp những câu hỏi của hành giả</p></a>
+<a class="editorial-item" id="khoa-thien" href="#khoa-thien"><div class="editorial-art art-retreat" aria-hidden="true"><span class="art-stone s1"></span><span class="art-stone s2"></span><span class="art-stone s3"></span></div><h2>Khóa thiền</h2><p>Lịch khóa thiền và thông tin đăng ký</p></a>
+<a class="editorial-item" id="gioi-thieu" href="/gioi-thieu/"><div class="editorial-art art-about" aria-hidden="true"><span class="art-leaf l1"></span><span class="art-leaf l2"></span><span class="art-leaf l3"></span></div><h2>Giới thiệu về Sư</h2><p>Tiểu sử và quá trình tu học</p></a>
+</section>
+<section class="editorial-bottom wrap"><div><div class="eyebrow">TIN TỨC & KHÓA THIỀN</div><h2>Thông báo mới</h2><p>Thông tin Phật sự và lịch khóa thiền sẽ được cập nhật tại đây.</p><span class="quiet-status">Chưa có thông báo mới</span></div><a id="tho" href="#tho"><div class="eyebrow">GÓC THƠ</div><h2>Tuyển tập thơ</h2><p>Những bài thơ của Sư · Sắp cập nhật</p><span class="quiet-arrow">Khám phá ↗</span></a></section>
 </main>
 <footer><div class="wrap">Sư Phước Nhựt · Venerable Dr. Paññādīpa — Không gian chia sẻ Pháp học và Pháp hành</div></footer></body></html>
