@@ -110,6 +110,14 @@ body{font-family:"Literata","Times New Roman",serif}
 .home-bio-copy h3{font-size:32px;font-weight:400;margin:0 0 25px}
 .home-bio-copy p{font-family:"Literata","Times New Roman",serif;font-weight:350;font-size:clamp(17px,1.5vw,21px);line-height:1.9;margin:0 0 25px;color:#302d29}
 @media(max-width:800px){.home-bio{grid-template-columns:1fr;gap:38px;padding-top:65px;padding-bottom:75px}.home-bio-portrait{max-width:300px}.editorial-gallery{padding-bottom:75px}}
+
+/* Airier, wider six-category gallery while preserving the staggered rhythm */
+.editorial-gallery.wrap{max-width:1560px;padding-left:clamp(22px,3.2vw,54px);padding-right:clamp(22px,3.2vw,54px);column-gap:clamp(24px,2.8vw,46px);padding-bottom:145px}
+.editorial-item:nth-child(even){padding-top:112px}
+.editorial-item h2{margin-top:21px}
+.editorial-item p{margin-top:7px}
+@media(max-width:1050px){.editorial-gallery.wrap{column-gap:30px;row-gap:75px;padding-bottom:100px}.editorial-item:nth-child(even){padding-top:70px}}
+@media(max-width:650px){.editorial-gallery.wrap{padding-left:22px;padding-right:22px;column-gap:20px;row-gap:48px;padding-bottom:85px}.editorial-item:nth-child(even){padding-top:54px}.editorial-item h2{margin-top:16px}}
 </style></head>
 <body><header class="top"><div class="wrap head"><a class="brand" href="/"><span class="symbol">✧</span><span><strong>Pháp học & Pháp hành</strong><small>SƯ PHƯỚC NHỰT · VENERABLE DR. PAÑÑĀDĪPA</small></span></a><nav aria-label="Chuyên mục"><a href="#phap-hoc">Pháp học</a><a href="#phap-hanh">Pháp hành</a><a href="#phap-thoai">Pháp thoại</a><a href="#hoi-dap">Hỏi đáp</a><a href="#tin-tuc">Tin tức &amp; Khóa thiền</a><a href="#tho">Thơ</a><a href="#gioi-thieu">Giới thiệu</a></nav></div></header>
 <main><section class="hero hero-wide" aria-label="Ảnh Sư Phước Nhựt"><img class="hero-wide-image" src="/IMG_3219.jpg?v=20261103b" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/suphuocnhut/suphuocnhut.github.io/main/IMG_3219.jpg?v=20261103b'" alt="Sư Phước Nhựt ngồi thiền trong y màu đỏ trầm" loading="eager"></section>
