@@ -262,6 +262,26 @@ body{font-family:"Literata","Times New Roman",serif}
 .footer-youtube,.footer-community a{color:#8b3037}
 .footer-youtube:hover,.footer-youtube:focus-visible,.footer-community a:hover,.footer-community a:focus-visible{color:#642128}
 @media(max-width:700px){.aspiration::before{margin-bottom:31px}.home-bio-full{margin-top:0}}
+
+/* Unified page background for the threefold aspiration */
+.aspiration{background:var(--cream)!important}
+/* Tighter vertical rhythm between the opening and full-width biography paragraphs */
+.home-bio{row-gap:18px}
+.home-bio-full{margin-top:0!important}
+@media(max-width:800px){.home-bio{row-gap:18px}}
+/* Invisible rectangular tiles at rest; reveal their original colors on hover/focus */
+.editorial-art,.art-books,.art-wheel,.art-headphones,.art-question,.art-lotus,.art-quill{background:transparent!important}
+.editorial-art{isolation:isolate;overflow:visible;box-shadow:none!important}
+.editorial-art::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transform:scale(.93);background:var(--tile-color,#e5d9c5);border-radius:0;box-shadow:0 18px 35px #34281d20;transition:opacity .42s ease,transform .48s cubic-bezier(.18,.78,.22,1)}
+.art-books{--tile-color:#e6d8c4}
+.art-wheel{--tile-color:#e5d9c5}
+.art-headphones{--tile-color:#c8d6cf}
+.art-question{--tile-color:#e8d5bb}
+.art-lotus{--tile-color:#e9d5aa}
+.art-quill{--tile-color:#c8d2d3}
+.editorial-art svg{position:relative;z-index:1}
+.editorial-item:hover .editorial-art::before,.editorial-item:focus-visible .editorial-art::before{opacity:1;transform:scale(1)}
+@media(prefers-reduced-motion:reduce){.editorial-art::before{transition:none}}
 </style></head>
 <body><header class="top"><div class="wrap head"><a class="brand" href="/"><span class="symbol">✧</span><span><strong>Pháp học & Pháp hành</strong><small>SƯ PHƯỚC NHỰT · VENERABLE DR. PAÑÑĀDĪPA</small></span></a><nav aria-label="Chuyên mục"><a href="#phap-hoc">Pháp học</a><a href="#phap-hanh">Pháp hành</a><a href="#phap-thoai">Pháp thoại</a><a href="#hoi-dap">Hỏi đáp</a><a href="#tin-tuc">Tin tức &amp; Khóa thiền</a><a href="#tho">Thơ</a><a href="#gioi-thieu">Giới thiệu</a></nav></div></header>
 <main><section class="hero hero-wide" aria-label="Ảnh Sư Phước Nhựt"><img class="hero-wide-image" src="/IMG_3219.jpg?v=20261103b" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/suphuocnhut/suphuocnhut.github.io/main/IMG_3219.jpg?v=20261103b'" alt="Sư Phước Nhựt ngồi thiền trong y màu đỏ trầm" loading="eager"></section>
