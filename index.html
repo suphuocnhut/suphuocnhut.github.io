@@ -241,6 +241,12 @@ body{font-family:"Literata","Times New Roman",serif}
 /* Mint links in the footer */
 .footer-youtube,.footer-community a{color:#187f78;font-weight:700}
 .footer-youtube:hover,.footer-youtube:focus-visible,.footer-community a:hover,.footer-community a:focus-visible{color:#0c5e59}
+
+/* Frameless, dimensional portrait: keep the entire original image visible */
+.home-bio-portrait{background:transparent!important;padding:0!important;border:0!important;border-radius:0!important;overflow:visible!important;box-shadow:none!important}
+.home-bio-portrait img{width:100%;height:auto;object-fit:contain;border-radius:0!important;box-shadow:0 8px 14px rgba(43,34,24,.12),0 24px 38px rgba(43,34,24,.19),0 48px 65px rgba(43,34,24,.11);transform:translateY(-3px);transition:transform .55s ease,box-shadow .55s ease}
+.home-bio-portrait:hover img{transform:translateY(-9px);box-shadow:0 12px 20px rgba(43,34,24,.12),0 34px 52px rgba(43,34,24,.22),0 60px 78px rgba(43,34,24,.13)}
+@media(prefers-reduced-motion:reduce){.home-bio-portrait img{transition:none}.home-bio-portrait:hover img{transform:none}}
 </style></head>
 <body><header class="top"><div class="wrap head"><a class="brand" href="/"><span class="symbol">✧</span><span><strong>Pháp học & Pháp hành</strong><small>SƯ PHƯỚC NHỰT · VENERABLE DR. PAÑÑĀDĪPA</small></span></a><nav aria-label="Chuyên mục"><a href="#phap-hoc">Pháp học</a><a href="#phap-hanh">Pháp hành</a><a href="#phap-thoai">Pháp thoại</a><a href="#hoi-dap">Hỏi đáp</a><a href="#tin-tuc">Tin tức &amp; Khóa thiền</a><a href="#tho">Thơ</a><a href="#gioi-thieu">Giới thiệu</a></nav></div></header>
 <main><section class="hero hero-wide" aria-label="Ảnh Sư Phước Nhựt"><img class="hero-wide-image" src="/IMG_3219.jpg?v=20261103b" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/suphuocnhut/suphuocnhut.github.io/main/IMG_3219.jpg?v=20261103b'" alt="Sư Phước Nhựt ngồi thiền trong y màu đỏ trầm" loading="eager"></section>
