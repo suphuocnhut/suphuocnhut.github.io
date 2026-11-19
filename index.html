@@ -315,10 +315,36 @@ body{font-family:"Literata","Times New Roman",serif}
 .featured-news-body h2{font-size:clamp(23px,2.15vw,33px);font-weight:500;line-height:1.42}
 /* Featured article excerpt matches the Sư biography copy */
 .featured-news-body p{font-family:"Literata","Times New Roman",serif;font-weight:350;font-size:clamp(17px,1.5vw,21px);line-height:1.9;color:#302d29}
+
+/* Prominent, quiet search surface between introduction and category gallery */
+.site-search{padding-top:12px;padding-bottom:clamp(40px,5vw,76px)}
+.site-search-inner{background:#eee5d6;border:1px solid #e0d1bb;padding:clamp(23px,3.5vw,47px);box-shadow:0 12px 35px #5946310c}
+.site-search-heading{display:flex;justify-content:space-between;align-items:end;gap:22px;margin-bottom:25px}
+.site-search-eyebrow{font:700 11px Arial,sans-serif;letter-spacing:.14em;color:#8b3037}
+.site-search-heading h2{font:400 clamp(24px,2.4vw,35px)/1.4 "Literata",serif;color:#3b3029;margin:9px 0 0}
+.site-search-heading p{font:15px/1.7 "Literata",serif;color:#6a5b4d;max-width:320px;margin:0}
+.site-search-form{display:flex;align-items:center;gap:14px;background:#fffdf8;border:1px solid #cbbba5;padding:7px 7px 7px 20px;transition:border-color .2s,box-shadow .2s}
+.site-search-form:focus-within{border-color:#8b3037;box-shadow:0 0 0 3px #8b30371a}
+.site-search-form svg{flex:none;color:#8b3037}
+.site-search-form input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:16px/1.5 "Literata",serif;color:#302d29;padding:12px 0}
+.site-search-form input::placeholder{color:#8d8071}
+.site-search-form button{border:0;background:#87343d;color:white;font:700 14px Arial,sans-serif;padding:17px 25px;cursor:pointer;white-space:nowrap}
+.site-search-form button:hover,.site-search-form button:focus-visible{background:#65252d}
+.site-search-results{margin-top:24px;border-top:1px solid #d4c5b0;padding-top:18px}
+.site-search-results[hidden]{display:none}
+.site-search-count{font:14px/1.6 Arial,sans-serif;color:#655749;margin:0 0 14px}
+.site-search-result{display:block;padding:15px 0;border-bottom:1px solid #dacdbb;text-decoration:none;color:#3b3029}
+.site-search-result strong{display:block;font:500 19px/1.5 "Literata",serif}
+.site-search-result small{display:block;color:#8b3037;font:700 11px/1.6 Arial,sans-serif;letter-spacing:.07em;margin-bottom:5px}
+.site-search-result span{display:block;color:#63574d;font:15px/1.7 "Literata",serif;margin-top:5px}
+.site-search-result:hover strong,.site-search-result:focus-visible strong{color:#8b3037;text-decoration:underline}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:700px){.site-search-heading{display:block}.site-search-heading p{margin-top:10px}.site-search-form{gap:8px;padding-left:12px}.site-search-form input{font-size:14px}.site-search-form button{padding:15px 12px;font-size:12px}}
 </style></head>
 <body><header class="top"><div class="wrap head"><a class="brand" href="/"><span class="symbol">✧</span><span><strong>Pháp học & Pháp hành</strong><small>SƯ PHƯỚC NHỰT · VENERABLE DR. PAÑÑĀDĪPA</small></span></a><nav aria-label="Chuyên mục"><a href="#phap-hoc">Pháp Học</a><a href="#phap-hanh">Pháp Hành</a><a href="#phap-thoai">Pháp Thoại</a><a href="#hoi-dap">Hỏi Đáp</a><a href="#tin-tuc">Tin Tức &amp; Khóa Thiền</a><a href="#tho">Tuyển Tập Thơ</a></nav></div></header>
 <main><section class="hero hero-wide" aria-label="Ảnh Sư Phước Nhựt"><img class="hero-wide-image" src="/IMG_3219.jpg?v=20261103b" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/suphuocnhut/suphuocnhut.github.io/main/IMG_3219.jpg?v=20261103b'" alt="Sư Phước Nhựt ngồi thiền trong y màu đỏ trầm" loading="eager"></section>
 <section class="editorial-intro wrap" aria-labelledby="explore-title"><div><div class="eyebrow">KHÔNG GIAN TU HỌC</div><h1 id="explore-title">Pháp học <em>&</em><br>Pháp hành</h1></div><div class="intro-copy"><p>Website là nơi tập hợp, lưu trữ và chia sẻ các bài giảng Pháp của Đại đức Phước Nhựt (Venerable Dr. Paññādīpa), nhằm giúp những người hữu duyên thuận tiện tìm hiểu giáo pháp, học hỏi và thực hành theo lời dạy gốc của Đức Phật.</p><p class="intro-sub">Khám phá các chuyên mục bên dưới.</p></div></section>
+<section class="site-search wrap" aria-labelledby="site-search-title"><div class="site-search-inner"><div class="site-search-heading"><div><span class="site-search-eyebrow">THƯ VIỆN PHẬT PHÁP</span><h2 id="site-search-title">Tìm kiếm bài giảng và tư liệu</h2></div><p>Nhập từ khóa để tra cứu nội dung đã đăng trên website.</p></div><form id="site-search-form" class="site-search-form" role="search"><label class="sr-only" for="site-search-input">Từ khóa tìm kiếm</label><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input id="site-search-input" type="search" name="q" placeholder="Ví dụ: Upakkilesa, Pháp hành, kinh sách…" autocomplete="off" required><button type="submit">Tìm kiếm <span aria-hidden="true">→</span></button></form><div id="site-search-results" class="site-search-results" aria-live="polite" hidden></div></div></section>
 <section class="editorial-gallery wrap" aria-label="Các chuyên mục">
 <a class="editorial-item" id="phap-hoc" href="#phap-hoc"><div class="editorial-art art-books" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><g class="book-stack"><path d="M20 81h81v18H20c-7 0-10-5-10-9s3-9 10-9Z" fill="#e8d6b6"/><path d="M27 85h65M27 95h65"/><path d="M28 59h72v21H28c-6 0-10-5-10-10s4-11 10-11Z" fill="#c4a981"/><path d="M34 65h57M34 75h57"/><path d="M23 37h73v21H23c-6 0-10-5-10-10s4-11 10-11Z" fill="#f1e5cd"/><path d="M30 43h57M30 53h57"/><path d="M35 17h63v19H35c-7 0-11-4-11-9s4-10 11-10Z" fill="#b89b73"/><path d="M40 22h49M40 31h49"/></g></svg></div><h2>Pháp Học</h2><p>Kinh điển, giáo lý và điển tích Phật giáo</p></a>
 <a class="editorial-item" id="phap-hanh" href="#phap-hanh"><div class="editorial-art art-wheel" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="60" cy="60" r="40"/><circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="14"/><circle cx="60" cy="60" r="8"/><g id="spoke"><path d="M55 45 52 31 57 25 63 25 68 31 65 45Z"/><circle cx="60" cy="20" r="4"/></g><use href="#spoke" transform="rotate(45 60 60)"/><use href="#spoke" transform="rotate(90 60 60)"/><use href="#spoke" transform="rotate(135 60 60)"/><use href="#spoke" transform="rotate(180 60 60)"/><use href="#spoke" transform="rotate(225 60 60)"/><use href="#spoke" transform="rotate(270 60 60)"/><use href="#spoke" transform="rotate(315 60 60)"/></svg></div><h2>Pháp Hành</h2><p>Những hướng dẫn thực hành tu tập</p></a>
@@ -336,4 +362,40 @@ body{font-family:"Literata","Times New Roman",serif}
 <p>Trung tâm đào tạo Pháp Sư (Dhammacariya) quận Hmawbi, Myanmar đã tôn vinh và phong tặng danh hiệu Tiến sĩ danh dự cho vị Tăng sĩ Việt Nam đầu tiên được đón nhận danh hiệu cao quý này: Venerable Dr. Paññādīpa – Đại đức Tiến sĩ Phước Nhựt.</p></div></section>
 </main>
 <section class="aspiration" aria-label="Lời phát nguyện"><div class="aspiration-mark" aria-hidden="true">✦</div><div class="aspiration-lines"><p>Buddhasāsanaṃ ciraṃ tiṭṭhatu</p><p>Buddhasāsanaṃ ciraṃ tiṭṭhatu</p><p>Buddhasāsanaṃ ciraṃ tiṭṭhatu</p></div><div class="aspiration-mark aspiration-mark-bottom" aria-hidden="true">✦</div></section>
-<footer class="site-footer"><div class="wrap footer-layout"><div class="footer-signature"><p class="footer-copyright">Copyright by Su Phuoc Nhut - Venerable Dr. Paññādīpa</p><a class="footer-youtube" href="https://www.youtube.com/channel/UC4-yUAYkwXDPDgASU4qm1oA" target="_blank" rel="noopener noreferrer" aria-label="Kênh YouTube của Sư Phước Nhựt"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2.5" y="7" width="27" height="18" rx="6" fill="currentColor"/><path d="M13 11.5 22 16l-9 4.5Z" fill="#faf8f3"/></svg><span>YouTube của Sư Phước Nhựt</span></a></div><div class="footer-community"><p>Để tham gia trao đổi, trình Pháp với Sư, kính mời quý vị tham gia nhóm: <a href="https://zalo.me/g/fijrto184" target="_blank" rel="noopener noreferrer">zalo.me/g/fijrto184</a></p><p>Để thực hiện các thiện Pháp, kính mời quý vị tham gia nhóm: <a href="https://zalo.me/g/qqdfha562" target="_blank" rel="noopener noreferrer">zalo.me/g/qqdfha562</a></p></div></div></footer></body></html>
+<footer class="site-footer"><div class="wrap footer-layout"><div class="footer-signature"><p class="footer-copyright">Copyright by Su Phuoc Nhut - Venerable Dr. Paññādīpa</p><a class="footer-youtube" href="https://www.youtube.com/channel/UC4-yUAYkwXDPDgASU4qm1oA" target="_blank" rel="noopener noreferrer" aria-label="Kênh YouTube của Sư Phước Nhựt"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2.5" y="7" width="27" height="18" rx="6" fill="currentColor"/><path d="M13 11.5 22 16l-9 4.5Z" fill="#faf8f3"/></svg><span>YouTube của Sư Phước Nhựt</span></a></div><div class="footer-community"><p>Để tham gia trao đổi, trình Pháp với Sư, kính mời quý vị tham gia nhóm: <a href="https://zalo.me/g/fijrto184" target="_blank" rel="noopener noreferrer">zalo.me/g/fijrto184</a></p><p>Để thực hiện các thiện Pháp, kính mời quý vị tham gia nhóm: <a href="https://zalo.me/g/qqdfha562" target="_blank" rel="noopener noreferrer">zalo.me/g/qqdfha562</a></p></div></div></footer><script>
+(function(){
+  const form=document.getElementById('site-search-form');
+  const input=document.getElementById('site-search-input');
+  const output=document.getElementById('site-search-results');
+  if(!form||!input||!output)return;
+  const normalize=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/Đ/g,'D').toLowerCase().trim();
+  const clear=()=>{output.replaceChildren();output.hidden=false;};
+  const paragraph=(message,cls)=>{const p=document.createElement('p');p.className=cls||'site-search-count';p.textContent=message;output.appendChild(p);};
+  form.addEventListener('submit',async function(e){
+    e.preventDefault();
+    const q=normalize(input.value);
+    if(!q)return;
+    clear();paragraph('Đang tìm kiếm…');
+    try{
+      const res=await fetch('/search-index.json',{cache:'no-cache'});
+      if(!res.ok)throw Error('search index unavailable');
+      const items=await res.json();
+      const terms=q.split(/\s+/).filter(Boolean);
+      const matches=items.map(item=>{
+        const title=normalize(item.title),body=normalize([item.category,item.description,item.keywords].join(' '));
+        return {item,score:terms.reduce((n,t)=>n+(title.includes(t)?3:0)+(body.includes(t)?1:0),0),valid:terms.every(t=>title.includes(t)||body.includes(t))};
+      }).filter(x=>x.valid).sort((a,b)=>b.score-a.score);
+      clear();
+      if(!matches.length){paragraph('Chưa tìm thấy nội dung phù hợp trong các bài đã đăng. Bạn thử một từ khóa khác nhé.');return;}
+      paragraph('Tìm thấy '+matches.length+' kết quả:');
+      matches.forEach(({item})=>{
+        const a=document.createElement('a');a.className='site-search-result';a.href=item.url;
+        const small=document.createElement('small');small.textContent=item.category;
+        const strong=document.createElement('strong');strong.textContent=item.title;
+        const span=document.createElement('span');span.textContent=item.description||'';
+        a.append(small,strong,span);output.appendChild(a);
+      });
+    }catch(err){clear();paragraph('Chưa thể tải dữ liệu tìm kiếm. Vui lòng thử lại sau.');}
+  });
+})();
+</script></body></html>
