@@ -28,7 +28,24 @@ footer{background:#d9cbb7;padding:35px 0;font:13px/1.7 Arial,sans-serif}
 /* Match homepage display headings and biography typography */
 h1{font-family:"Literata",serif;font-weight:500;font-size:clamp(26px,2.75vw,39px);line-height:1.4}
 .article-copy p{font-family:"Literata","Times New Roman",serif;font-weight:350;font-size:clamp(17px,1.5vw,21px);line-height:1.9;color:#302d29}
-</style></head><body>
+
+/* Shared aspiration and footer layout, synchronized with homepage */
+.aspiration{text-align:center;padding:82px 24px 74px;background:#f8f5ee;border-top:0;position:relative}
+.aspiration::before{display:none;content:none}
+.aspiration-mark{color:#a58b64;font-size:20px;line-height:1;margin-bottom:28px}
+.aspiration-mark-bottom{margin:28px 0 0}
+.aspiration-lines p{font-family:"Noto Serif Condensed","Literata",serif;font-size:clamp(17px,1.75vw,24px);font-weight:400;font-style:italic;line-height:1.9;letter-spacing:.015em;color:#65553e;margin:0}
+.site-footer{background:#d9cbb7;border-top:1px solid #c5b39a;padding:52px 0 60px;color:#40382f}
+.footer-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(35px,6vw,90px);align-items:start}
+.footer-copyright{font:14px/1.7 Arial,sans-serif;margin:0 0 22px;color:#40382f}
+.footer-youtube{display:inline-flex;align-items:center;gap:10px;color:#8b3037;font:700 13px Arial,sans-serif;text-decoration:none}
+.footer-youtube svg{width:31px;height:31px;display:block}
+.footer-youtube:hover,.footer-youtube:focus-visible{color:#642128}
+.footer-community p{font:15px/1.85 "Literata",serif;margin:0 0 19px;color:#40382f}
+.footer-community a{color:#8b3037;font-weight:700;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:4px;text-decoration-color:currentColor;overflow-wrap:anywhere}
+.footer-community a:hover,.footer-community a:focus-visible{color:#642128;text-decoration-thickness:2px}
+@media(max-width:700px){.aspiration{padding:62px 18px}.aspiration-lines p{font-size:clamp(17px,4.7vw,23px)}.footer-layout{grid-template-columns:1fr;gap:28px}.site-footer{padding:42px 0}}
+</style><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Condensed:ital,wght@1,400&display=swap" rel="stylesheet"></head><body>
 <header><div class="wrap"><a class="brand" href="/">✧ Pháp học &amp; Pháp hành · Sư Phước Nhựt</a><a class="back" href="/#tin-tuc">← Về trang chủ</a></div></header>
 <main class="wrap"><div class="kicker">TIN TỨC &amp; KHÓA THIỀN · THÁNG 7/2026</div>
 <h1>Ấn tống sách “Nghiên Cứu Phân Tích Upakkilesa Trong Văn Học Pāḷi”</h1>
@@ -38,5 +55,6 @@ h1{font-family:"Literata",serif;font-weight:500;font-size:clamp(26px,2.75vw,39px
 <p>Cuốn sách này là một công trình phân tích về upakkilesa (các cấu uế của tâm) trong văn học Tạng Pāḷi, tập trung vào việc tu tập danh pháp và sắc pháp nhằm đoạn trừ hoàn toàn các cấu uế. Sách gồm sáu chương, mỗi chương bàn về một chủ đề riêng, hỗ trợ những hành giả đang bước đi trên con đường hướng đến lý tưởng giác ngộ, giải thoát, Niết Bàn.</p>
 <p class="contact">Quý vị mong muốn thỉnh sách xin liên hệ với Ban tổ chức qua đường link:</p>
 </div></div></main>
-<footer><div class="wrap">Copyright by Su Phuoc Nhut - Venerable Dr. Paññādīpa</div></footer>
+<section class="aspiration" aria-label="Lời phát nguyện"><div class="aspiration-mark" aria-hidden="true">✦</div><div class="aspiration-lines"><p>Buddhasāsanaṃ ciraṃ tiṭṭhatu</p><p>Buddhasāsanaṃ ciraṃ tiṭṭhatu</p><p>Buddhasāsanaṃ ciraṃ tiṭṭhatu</p></div><div class="aspiration-mark aspiration-mark-bottom" aria-hidden="true">✦</div></section>
+<footer class="site-footer"><div class="wrap footer-layout"><div class="footer-signature"><p class="footer-copyright">Copyright by Su Phuoc Nhut - Venerable Dr. Paññādīpa</p><a class="footer-youtube" href="https://www.youtube.com/channel/UC4-yUAYkwXDPDgASU4qm1oA" target="_blank" rel="noopener noreferrer" aria-label="Kênh YouTube của Sư Phước Nhựt"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2.5" y="7" width="27" height="18" rx="6" fill="currentColor"/><path d="M13 11.5 22 16l-9 4.5Z" fill="#faf8f3"/></svg><span>YouTube của Sư Phước Nhựt</span></a></div><div class="footer-community"><p>Để tham gia trao đổi, trình Pháp với Sư, kính mời quý vị tham gia nhóm: <a href="https://zalo.me/g/fijrto184" target="_blank" rel="noopener noreferrer">zalo.me/g/fijrto184</a></p><p>Để thực hiện các thiện Pháp, kính mời quý vị tham gia nhóm: <a href="https://zalo.me/g/qqdfha562" target="_blank" rel="noopener noreferrer">zalo.me/g/qqdfha562</a></p></div></div></footer>
 </body></html>
